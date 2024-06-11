@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Inter, sans-serif; */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --text-color: #30363c;
+    --main-color: rgb(7, 161, 161);
+    --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --shadow-border: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.navbar1{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    background-color: white;
+    z-index: 10;
+}
+
+.nav{
+    box-shadow: lightgrey 0 0 5px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.nav > img{
+    margin: 7px 35px;
+    height: 40px;
+}
+
+.nav > img + div{
+    width: 1px;
+    background-color: grey;
+    height: 30px;
+    margin: auto 0;
+}
+
+#pick-address{
+    margin: auto 30px;
+}
+
+#pick-address > div{
+    display: flex;
+}
+
+#pick-address > div p{
+    font-size: 13px;
+}
+
+#pick-address > h4{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline;
+    
+}
+
+#pick-address > i{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.download-app{
+    cursor: pointer;
+    display: flex;
+    margin:  auto 20px auto auto;
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgb(226, 247, 255);
+    width: 180px;
+    height: 50px;
+}
+
+.download-app:hover{
+    background-color: rgb(200, 240, 255);
+}
+
+.download-app > p {
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav > ul {
+    margin: auto 20px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav > ul li,
+.nav > ul li a {
+    margin: 10px 15px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav ul li p{
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.navbar{
+    width: 100%;
+    background-color: white;
+    /* position: fixed; */
+    /* position: relative; */
+    margin-top: 60px;
+}
+nav{
+    box-shadow: lightgrey 0 0 5px;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    /* margin-top: 40px; */
+}
+nav ul{
+    display: flex;
+    /* margin-top: 10px; */
+}
+nav ul li {
+    list-style: none;
+    /* padding: 10px 30px; */
+    position: relative;
+    margin-left: 50px;
+    margin-top: 10px;
+    line-height: 30px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(108, 119, 137);;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 2rem;
+}
+nav ul li a:hover{
+    color: blue;
+}
+.dropdown_menu{
+    display: none;
+}
+
+nav ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 100%;
+    width: 250px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 2;
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown_menu ul li{
+    padding: 3px;
+    
+}
+.drop-icon{
+    float: right;
+    margin-top: 10px;
+}
+.dropdown-skincare{
+    display: none;
+}
+.dropdown_menu ul li:hover .dropdown-skincare{
+    display: block;
+    position: absolute;
+    left: 150px;
+    width: 220px;
+    top: -10px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-skincare ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown-skincare ul li{
+    padding: 4px;
+}
+.dropdown-skincare ul li a{
+    font-size: 12px;
+}
+.dropdown-haircare{
+    display: none;
+}
+.dropdown_menu ul li:hover .dropdown-haircare{
+    display: block;
+    position: absolute;
+    left: 150px;
+    width: 200px;
+    top: -45px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-haircare ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown-haircare ul li a{
+    font-size: 12px;
+}
+.dropdown-babycare{
+    display: none;
+}
+.dropdown_menu ul li:hover .dropdown-babycare{
+    display: block;
+    position: absolute;
+   
+    left: 150px;
+    width: 260px;
+    top: -79px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-oralcare{
+    display: none;
+}
+.dropdown_menu ul li:hover .dropdown-oralcare{
+    display: block;
+    position: absolute;
+    left: 150px;
+    width: 200px;
+    top: -120px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-oralcare ul li a{
+    font-size: 12px;
+}
+.dropdown_menu ul li:hover{
+     background-color: rgb(238, 241, 247);
+     box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+}
+.dropdown-elederlycare{
+    display: none;
+}
+.dropdown_menu ul li:hover .dropdown-elederlycare{
+    display: block;
+    position: absolute;
+    left: 150px;
+    width: 230px;
+    top: -150px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-elederlycare ul li a{
+    font-size: 10px;
+}
+.skinbar ul{
+    display: flex;
+}
+.skinbar ul li{
+    list-style: none;
+    margin-left: 13px;
+}
+.skinbar ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+}
+.dropdown-health{
+    display: none;
+}
+nav ul li:hover .dropdown-health {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 100%;
+    width: 250px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 2;
+    /* background-color: rgb(238, 241, 247); */
+    
+}
+.dropdown-health ul {
+    display: block;
+}
+.dropdown-digestive{
+    display: none;
+}
+.dropdown-eyecare{
+    display: none;
+}
+.dropdown-health ul li:hover .dropdown-digestive{
+    display: block;
+    position: absolute;
+    left: 165px;
+    width: 230px;
+    top: 0px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: -1;
+}
+.dropdown-health ul li:hover .dropdown-eyecare{
+    display: block;
+    position: absolute;
+    left: 165px;
+    top: 120%;
+    width: 230px;
+    top: 0px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-smoking{
+    display: none;
+}
+.dropdown-health ul li:hover .dropdown-smoking{
+    display: block;
+    position: absolute;
+    left: 166px;
+    width: 230px;
+    top: 0px;
+    background-color: rgb(238, 241, 247);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+}
+.dropdown-vitamins{
+    display: none;
+}
+nav ul li:hover .dropdown-vitamins{
+    display: block;
+    position: absolute;
+    width: 280px;
+    left: -20px;
+    top: 100%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+   
+}
+.dropdown-vitamins ul{
+    display: block;
+}
+.dropdown-diabetes{
+    display: none;
+}
+nav ul li:hover .dropdown-diabetes{
+    display: block;
+    position: absolute;
+    width: 280px;
+    left: -20px;
+    top: 100%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+   
+}
+.dropdown-diabetes ul{
+    display: block;
+}
+.dropdown-healthdevice{
+    display: none;
+}
+nav ul li:hover .dropdown-healthdevice{
+    display: block;
+    position: absolute;
+    width: 260px;
+    left: -20px;
+    top: 100%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    z-index: 2;
+   
+}
+.dropdown-healthdevice ul{
+    display: block;
+}
+.personal-menus{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 2.2rem;
+    letter-spacing: 0.24px;
+    white-space: nowrap;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 130px;
+}
+.personal-sidebar{
+    width: calc(100% - 64px);
+    margin: 0px auto 72px;
+    display: flex;
+    gap: 60px;
+}
+section{
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+.personal-sidebar-Cointner{
+    display: flex;
+    flex-direction: column;
+    width: 216px;
+    
+}
+.personal-sidebar-Cointner p{
+    color: rgb(21, 29, 40);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    padding: 0px;
+    margin-bottom: 8px;
+    
+}
+.sidebar-cointner-first{
+    border-radius: 8px;
+    border: 1px solid rgb(209, 217, 230);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 14px;
+}
+.catergory{
+    padding: 0px 4px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.catergory button{
+color: rgb(46, 119, 229);
+font-size: 1.2rem;
+font-weight: 600;
+line-height: 2rem;
+background: none;
+border: none;
+cursor: pointer;
+}
+.radio-btn-personal{
+    max-height: 210px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 4px 4px;
+    border-top: 1px solid rgb(209, 217, 230);
+}
+.radio-btn-personal a{
+    text-decoration: none;
+    color: rgb(108, 119, 137);;
+}
+.radio-btn-personal span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.image-sidebar-ppersonal{
+    flex: 1 1 0%;
+    padding-right: 6.4rem;
+}
+.personal-sidebar h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(64, 70, 77);
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding-bottom: 14px;
+    
+}
+.setimg{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.set-personalimg{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.firstpersonal{
+    height: 300px;
+    width: 260px;
+    border: 1px solid rgb(209, 217, 230);
+    border-radius: 8px;
+    box-shadow: rgb(0,0,0,0.15) -2px 4px 4px 0px;
+    position: relative;
+}
+.off{
+    background: rgb(34, 181, 115);
+    border-radius: 0px 16px 16px 0px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 3px 11px 3px 10px;
+    width: fit-content;
+    position: absolute;
+    top: 1.9rem;
+    left: 0px;
+}
+.kcfizg{
+    padding: 0px 0px 25px;
+    height: 11.7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   position: absolute;
+   top: 40px;
+}
+.kcfizg img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    color: transparent;
+}
+.kcfizg span{
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    line-height: 2.4rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: rgb(64, 70, 77);
+}
+.lineinitems{
+  height: 2px;
+  width: 90%;
+  background-color: rgb(212, 221, 226);
+  position: absolute;
+  top: 180px;
+  left: 8px;
+}
+.delmrp{
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+.rate{
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    color: black;
+    font-weight: 700;
+}
+.itemsinbutton{
+background-color: rgb(228, 238, 251);
+border-radius: 4px;
+border: 1px solid rgb(46, 119, 229);
+font-weight: 600;
+font-size: 15px;
+height: 3.2rem;
+text-align: center;
+color: rgb(46, 119, 229);
+padding: 0px 30px;
+cursor: pointer;
+position: absolute;
+top: 200px;
+left: 150px;
+}
+.hari{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.lastfooter-1{
+    width: 100%;
+    height: 350px;
+    background-color: lightblue;
+    
+  }
+  .lastfooter-headings1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .lastfooter-Company ul li{
+    margin-top: 30px;
+    
+     }
+     .lastnamecomapny{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+      }
+      .lastfootermedias{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .lastfootersocial p{
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 25px;
+       
+    }
+    .logolastfooter{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    #facebook{
+        color: blue;
+    }
+    #youtube{
+    color: red;
+    }
+    #linkedin{
+        color: #0077b5;
+    }
+    .lastfooter-legal{
+        display: flex;
+        flex-direction: column;
+    }
+    .lastfooter-legal ul li a{
+        margin-top: 10px;
+        color: rgb(108, 119, 137);
+        font-size: 15px;
+        margin-left: -30px;
+        text-decoration: none;
+    }
+    .lastfooter-subscribe h2{
+        color: rgb(108, 119, 137);
+        margin-top: 25px; 
+    }
+    .QIpTB {
+        border: 1px solid currentcolor;
+        border-radius: 7px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        
+        justify-content: space-between;
+        
+    }
+    .emailfooter{
+        border: 0px;
+        outline: 0px;
+        min-width: 0px;
+        padding: 0px 16px;
+        background-color: transparent;
+        color: rgb(136, 151, 162);
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        }
+        .emailsubmitbtn-1{
+            border-radius: 6px;
+            background: rgb(0, 113, 188);
+            color: rgb(255, 255, 255);
+            font-size: 1.6rem;
+            font-weight: 700;
+        
+            padding: 12px 24px;
+            border: 0px;
+            width: 200px;
+            cursor: pointer;
+            
+            margin-left: 20px;
+        }
